@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "lib": ["dom", "es2017"],
+    // "noLib": true, // better-typescript-libより https://qiita.com/uhyo/items/18458646e8aae25207db
+    "jsx": "react",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": "./src",
+    "paths": {
+      "assets/": ["./src/assets/*"],
+      "components/": ["./src/components/*"],
+      "containers/": ["./src/containers/*"],
+      "pages/": ["./src/pages/*"],
+      "models/": ["./src/models/*"],
+    },
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "incremental": true,
+    "noEmit": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    // "jsxImportSource": "@emotion/react",
+    "strict": true,                           /* Enable all strict type-checking options. */
+    "noImplicitAny": true,                 /* Raise error on expressions and declarations with an implied 'any' type. */
+    "strictNullChecks": true,              /* Enable strict null checks. */
+    "strictFunctionTypes": true,           /* Enable strict checking of function types. */
+    "strictBindCallApply": true,           /* Enable strict 'bind', 'call', and 'apply' methods on functions. */
+    "strictPropertyInitialization": true,  /* Enable strict checking of property initialization in classes. */
+  },
+  "include": ["src/**/*", "src/**/**/*","gatsby-node/index.ts"],
+  "exclude": ["node_modules", "public", "build", "src/containers/templates/blog-post.tsx"],
+}
